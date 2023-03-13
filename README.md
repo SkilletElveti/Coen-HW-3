@@ -65,21 +65,20 @@ Client - 9.55 Mbits/sec \
 
 h1 h8:\
 Server - 3.00 Mbits/sec \
-Client - 4.00 Mbits/sec \
+Client - 4.00 Mbits/sec 
 
 c. What is the difference, and explain the reasons for the difference. \
 The observed data transfer rate between h1 and h8 is less than half of the data transfer rate between h1 and h2. This is because when a packet
 is transmitted through multiple switches, each switch has to broadcast the incoming packet to every other node, which takes more time.
 However, since h1 and h2 are connected by only one switch, the transfer rate is faster as there are no other switches involved in the transmission.
 
-4. Which of the switches observe traffic? 
+4. Which of the switches observe traffic? \
 All switches observe traffic.
 
 Task 3: MAC Learning Controller
 
 1. Describe how the above code works, such as how the "MAC to Port" map is established. You could use a ‘ping’ example to describe
-the establishment process (e.g., h1 ping h2). 
-
+the establishment process (e.g., h1 ping h2). \
 When h1 sends a ping packet to h2, the packet is routed through switch 's3'. While routing, switch 's3' searches the mac_to_port{}
 table to check if it already contains a record for the MAC address of the incoming packet. If an entry is found, the switch forwards
 the packet to the port that matches the MAC address. If there is no matching entry, the switch learns the association between the MAC
