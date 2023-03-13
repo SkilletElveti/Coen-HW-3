@@ -11,7 +11,7 @@ Task 1 - Defining custom topologies
 \
 Nodes => Gives the all the individual nodes in the current topology 
 \
-net => It will display all links of the current topology
+Net => It will display all links of the current topology
 
 2. What is the output of “h7 ifconfig”
 \
@@ -27,31 +27,23 @@ controller, which function is the first to be called, which one is the second, a
 
 
 a. How long does it take (on average) to ping for each case?
-\\
-
+\
 h1 ping h2 : 7.052 ms
-\\
-
+\
 h1 ping h8 : 28.928 ms 
 
 b.  What is the minimum and maximum ping you have observed?
-\\
-
+\
 h1 ping h2:
-\\
-
+\
 min =>  0.787
-\\
-
+\
 max => 194.158
-\\
-
+\
 h1 ping h8:
-\\
-
+\
 min => 9.068 
-\\
-
+\
 max => 311.135
 
 c. What is the difference, and why? 
