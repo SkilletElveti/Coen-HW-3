@@ -38,16 +38,26 @@ h1 ping h2 : 7.052 ms
 h1 ping h8 : 28.928 ms 
 
 b.  What is the minimum and maximum ping you have observed?
-\n
+\\
+
 h1 ping h2:
-min =>  0.787 
+\\
+
+min =>  0.787
+\\
+
 max => 194.158
-\n
+\\
+
 h1 ping h8:
-min => 9.068
+\\
+
+min => 9.068 
+\\
+
 max => 311.135
 
-c. What is the difference, and why?
+c. What is the difference, and why? 
 It has been noticed that the time taken for a ping packet to travel from host h1 to h8 is considerably longer than the time taken 
 for a ping packet to travel from h1 to h2. This difference in ping times could be attributed to the fact that the packet must 
 traverse through multiple switches from h1 to h8, whereas only one switch is involved in the path between h1 and h2.
@@ -60,8 +70,7 @@ between two network endpoints by generating and transmitting a stream of data pa
 are received at the other end.
 
 b. What is the throughput for each case?
-
-h2 h2:
+h2 h2: 
 Server - 9.00 Mbits/sec
 Client - 9.55 Mbits/sec
 
