@@ -8,12 +8,14 @@ Mininet and OpenFlow
 Task 1 - Defining custom topologies
 
 1. What is the output of “nodes” and “net”? 
-\n
+\\
+
 Nodes => Gives the all the individual nodes in the current topology 
 net => It will display all links of the current topology
 
 2. What is the output of “h7 ifconfig”
-\n
+\\
+
 "h7 ifconfig" would display the network configuration which includes IP address, broadcast address and MAC address of the host h7.
 
 Task 2 - Analyze the “of_tutorial’ controller
