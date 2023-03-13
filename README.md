@@ -46,28 +46,28 @@ min => 9.068
 \
 max => 311.135
 
-c. What is the difference, and why? 
+c. What is the difference, and why?\
 It has been noticed that the time taken for a ping packet to travel from host h1 to h8 is considerably longer than the time taken 
 for a ping packet to travel from h1 to h2. This difference in ping times could be attributed to the fact that the packet must 
 traverse through multiple switches from h1 to h8, whereas only one switch is involved in the path between h1 and h2.
 
 3. Run “iperf h1 h2” and “iperf h1 h8”
 
-a. What is “iperf” used for?
+a. What is “iperf” used for?\
 "Iperf" is a commonly used tool for measuring network bandwidth and performance. It is used to test the maximum achievable bandwidth
 between two network endpoints by generating and transmitting a stream of data packets, and then measuring the rate at which the packets
 are received at the other end.
 
-b. What is the throughput for each case?
-h2 h2: 
-Server - 9.00 Mbits/sec
-Client - 9.55 Mbits/sec
+b. What is the throughput for each case?\
+h2 h2:\
+Server - 9.00 Mbits/sec \
+Client - 9.55 Mbits/sec \
 
-h1 h8:
-Server - 3.00 Mbits/sec
-Client - 4.00 Mbits/sec
+h1 h8:\
+Server - 3.00 Mbits/sec \
+Client - 4.00 Mbits/sec \
 
-c. What is the difference, and explain the reasons for the difference.
+c. What is the difference, and explain the reasons for the difference. \
 The observed data transfer rate between h1 and h8 is less than half of the data transfer rate between h1 and h2. This is because when a packet
 is transmitted through multiple switches, each switch has to broadcast the incoming packet to every other node, which takes more time.
 However, since h1 and h2 are connected by only one switch, the transfer rate is faster as there are no other switches involved in the transmission.
