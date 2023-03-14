@@ -60,6 +60,37 @@ Task 2 - Analyze the “of_tutorial’ controller
 \
 1. Draw the function call graph of this controller. For example, once a packet comes to the
 controller, which function is the first to be called, which one is the second, and so forth?
+```
+```
+	packet comes in
+	
+        |
+        V
+	,__________________,
+	|                  |
+	| _handle_PacketIn |
+	|__________________|
+	
+	    |
+	    V
+	,__________________,
+	|                  |
+	|   act_like_hub   |   
+	|__________________|
+	
+	    |
+	    V
+	,__________________,
+	|                  |
+	|  resend_packet   |
+	|__________________|
+		
+	    |
+	    V
+
+     forward message to port
+```
+```
 \
 2. Have h1 ping h2, and h1 ping h8 for 100 times (e.g., h1 ping -c100 p2).
 \
