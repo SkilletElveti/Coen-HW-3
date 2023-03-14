@@ -75,7 +75,7 @@ However, since h1 and h2 are connected by only one switch, the transfer rate is 
 4. Which of the switches observe traffic? \
 All switches observe traffic.
 
-Task 3: MAC Learning Controller
+Task 3 - MAC Learning Controller
 
 1. Describe how the above code works, such as how the "MAC to Port" map is established. You could use a ‘ping’ example to describe
 the establishment process (e.g., h1 ping h2). \
