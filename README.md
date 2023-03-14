@@ -101,10 +101,8 @@ Min => 14.062 ms
 Max => 225.0 ms
 
 c. Any difference from Task 2 and why do you think there is a change if there is?
-Despite the fact that the average ping time is a bit higher than in Task2, the minimum and maximum ping values are considerably lower.
-This is due to the switch being more knowledgeable about the network by storing the known MAC addresses, which reduces the need to broadcast 
-incoming packets to every other switch. Consequently, the switch only needs to transfer packets to a single known address, thereby reducing 
-the overall transmission time and resulting in a lower ping time.
+\
+Despite the fact that the average ping time is a bit higher than in Task2, the minimum and maximum ping values are considerably lower.This is due to the switch being more knowledgeable about the network by storing the known MAC addresses, which reduces the need to broadcast incoming packets to every other switch. Consequently, the switch only needs to transfer packets to a single known address, thereby reducing the overall transmission time and resulting in a lower ping time.
 
 3. Run “iperf h1 h2” and “iperf h1 h8”.
 a. What is the throughput for each case?
