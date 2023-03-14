@@ -29,7 +29,7 @@ controller, which function is the first to be called, which one is the second, a
 h1 ping h2 : 7.052 ms
 \
 h1 ping h8 : 28.928 ms 
-
+\
 2b.  What is the minimum and maximum ping you have observed?
 \
 h1 ping h2:
@@ -43,7 +43,7 @@ h1 ping h8:
 min => 9.068 
 \
 max => 311.135
-
+\
 2c. What is the difference, and why?
 \
 It has been noticed that the time taken for a ping packet to travel from host h1 to h8 is considerably longer than the time taken 
