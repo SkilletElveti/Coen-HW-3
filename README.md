@@ -15,6 +15,7 @@ c0 h1 h2 h3 h4 h5 h6 h7 h8 s1 s2 s3 s4 s5 s6 s7
 \
 Net => It will display all links of the current topology
 \
+```
 h1 h1-eth0:s3-eth2
 h2 h2-eth0:s3-eth3
 h3 h3-eth0:s4-eth2
@@ -31,7 +32,7 @@ s5 lo:  s5-eth1:s1-eth2 s5-eth2:s6-eth1 s5-eth3:s7-eth1
 s6 lo:  s6-eth1:s5-eth2 s6-eth2:h5-eth0 s6-eth3:h6-eth0
 s7 lo:  s7-eth1:s5-eth3 s7-eth2:h7-eth0 s7-eth3:h8-eth0
 c0
-
+```
 2. What is the output of “h7 ifconfig”
 \
 "h7 ifconfig" would display the network configuration which includes IP address, broadcast address and MAC address of the host h7.
