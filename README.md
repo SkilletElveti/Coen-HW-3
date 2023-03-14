@@ -94,25 +94,20 @@ controller, which function is the first to be called, which one is the second, a
 2. Have h1 ping h2, and h1 ping h8 for 100 times (e.g., h1 ping -c100 p2).
 \
 2a. How long does it take (on average) to ping for each case?
-\
+```
 h1 ping h2 : 7.052 ms
-\
 h1 ping h8 : 28.928 ms 
-\
+```
 2b.  What is the minimum and maximum ping you have observed?
-\
+```
 h1 ping h2:
-\
 min =>  0.787
-\
 max => 194.158
-\
+
 h1 ping h8:
-\
 min => 9.068 
-\
 max => 311.135
-\
+```
 \
 2c. What is the difference, and why?
 \
