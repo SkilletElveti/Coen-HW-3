@@ -18,14 +18,12 @@ Net => It will display all links of the current topology
 "h7 ifconfig" would display the network configuration which includes IP address, broadcast address and MAC address of the host h7.
 
 Task 2 - Analyze the “of_tutorial’ controller
-
+\
 1. Draw the function call graph of this controller. For example, once a packet comes to the
 controller, which function is the first to be called, which one is the second, and so forth?
-  
-
+\
 2. Have h1 ping h2, and h1 ping h8 for 100 times (e.g., h1 ping -c100 p2).
-
-
+\
 a. How long does it take (on average) to ping for each case?
 \
 h1 ping h2 : 7.052 ms
@@ -46,14 +44,16 @@ min => 9.068
 \
 max => 311.135
 
-c. What is the difference, and why?\
+c. What is the difference, and why?
+\
 It has been noticed that the time taken for a ping packet to travel from host h1 to h8 is considerably longer than the time taken 
 for a ping packet to travel from h1 to h2. This difference in ping times could be attributed to the fact that the packet must 
 traverse through multiple switches from h1 to h8, whereas only one switch is involved in the path between h1 and h2.
 
 3. Run “iperf h1 h2” and “iperf h1 h8”
-
-a. What is “iperf” used for?\
+\
+a. What is “iperf” used for?
+\
 "Iperf" is a commonly used tool for measuring network bandwidth and performance. It is used to test the maximum achievable bandwidth
 between two network endpoints by generating and transmitting a stream of data packets, and then measuring the rate at which the packets
 are received at the other end.
