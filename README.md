@@ -36,6 +36,25 @@ c0
 2. What is the output of “h7 ifconfig”
 \
 "h7 ifconfig" would display the network configuration which includes IP address, broadcast address and MAC address of the host h7.
+```
+h7-eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.0.7  netmask 255.0.0.0  broadcast 10.255.255.255
+        inet6 fe80::40db:47ff:fe97:e981  prefixlen 64  scopeid 0x20<link>
+        ether 42:db:47:97:e9:81  txqueuelen 1000  (Ethernet)
+        RX packets 56  bytes 4232 (4.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10  bytes 796 (796.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        
+        lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
 
 Task 2 - Analyze the “of_tutorial’ controller
 \
