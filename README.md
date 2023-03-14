@@ -44,11 +44,13 @@ min => 9.068
 \
 max => 311.135
 \
+\
 2c. What is the difference, and why?
 \
 It has been noticed that the time taken for a ping packet to travel from host h1 to h8 is considerably longer than the time taken 
 for a ping packet to travel from h1 to h2. This difference in ping times could be attributed to the fact that the packet must 
 traverse through multiple switches from h1 to h8, whereas only one switch is involved in the path between h1 and h2.
+\
 \
 3. Run “iperf h1 h2” and “iperf h1 h8”
 \
@@ -57,6 +59,7 @@ traverse through multiple switches from h1 to h8, whereas only one switch is inv
 "Iperf" is a commonly used tool for measuring network bandwidth and performance. It is used to test the maximum achievable bandwidth
 between two network endpoints by generating and transmitting a stream of data packets, and then measuring the rate at which the packets
 are received at the other end.
+\
 \
 3b. What is the throughput for each case?\
 h2 h2:\
