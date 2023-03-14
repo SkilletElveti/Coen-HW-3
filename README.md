@@ -73,45 +73,56 @@ Server - 3.00 Mbits/sec
 Client - 4.00 Mbits/sec 
 \
 3c. What is the difference, and explain the reasons for the difference. \
-The observed data transfer rate between h1 and h8 is less than half of the data transfer rate between h1 and h2. This is because when a packet
-is transmitted through multiple switches, each switch has to broadcast the incoming packet to every other node, which takes more time.However, since h1 and h2 are connected by only one switch, the transfer rate is faster as there are no other switches involved in the transmission.
+The observed data transfer rate between h1 and h8 is less than half of the data transfer rate between h1 and h2. This is because when a packet is transmitted through multiple switches, each switch has to broadcast the incoming packet to every other node, which takes more time.However, since h1 and h2 are connected by only one switch, the transfer rate is faster as there are no other switches involved in the transmission.
 \
-4. Which of the switches observe traffic? \
+4. Which of the switches observe traffic? 
 All switches observe traffic.
 
 Task 3 - MAC Learning Controller
-
+\
 1. Describe how the above code works, such as how the "MAC to Port" map is established. You could use a ‘ping’ example to describe the establishment process (e.g., h1 ping h2). 
 \
 When h1 sends a ping packet to h2, the packet is routed through switch 's3'. While routing, switch 's3' searches the mac_to_port{} table to check if it already contains a record for the MAC address of the incoming packet. If an entry is found, the switch forwards the packet to the port that matches the MAC address. If there is no matching entry, the switch learns the association between the MAC address and the input port of the packet, adds the entry to the mac_to_port{} table, and then broadcasts the packet to all output ports except the input port.
-
+\
 2. Have h1 ping h2, and h1 ping h8 for 100 times (e.g., h1 ping -c100 p2). 
 \
 2a. How long did it take (on average) to ping for each case?
+\
 h1 ping h2 : 13.000  ms
+\
 h1 ping h8 : 33.000 ms
 \
 2b. What is the minimum and maximum ping you have observed? 
+\
 h1 ping h2:
+\
 Min => 1.210 ms
+\
 Max => 103.000 ms
-
+\
 h1 ping h8:
+\
 Min => 14.062 ms
+\
 Max => 225.0 ms
-
+\
 2c. Any difference from Task 2 and why do you think there is a change if there is?
 \
 Despite the fact that the average ping time is a bit higher than in Task2, the minimum and maximum ping values are considerably lower.This is due to the switch being more knowledgeable about the network by storing the known MAC addresses, which reduces the need to broadcast incoming packets to every other switch. Consequently, the switch only needs to transfer packets to a single known address, thereby reducing the overall transmission time and resulting in a lower ping time.
-
+\
 3. Run “iperf h1 h2” and “iperf h1 h8”.
-a. What is the throughput for each case?
-
+\
+3a. What is the throughput for each case?
+\
 h2 h2:
+\
 Server - 645 Kbits/sec
+\
 Client - 890 Kbits/sec
-
+\
 h1 h8:
+\
 Server - 170 Kbits/sec
+\
 Client - 360 Kbits/sec
-        
+\
